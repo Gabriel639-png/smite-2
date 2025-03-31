@@ -1,0 +1,133 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111111; /* Cor de fundo escura */
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000; /* Fundo preto */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#titulo {
+    font-size: 36px;
+    color: #FF6600; /* Laranja para o título */
+    text-transform: uppercase;
+}
+
+/* Navegação */
+#menu ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de mudança de cor para rosa nos links de navegação */
+#menu ul li a:hover {
+    color: #FF007F; /* Cor rosa */
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #222222; /* Cor de fundo escura para as seções */
+    border-radius: 8px;
+}
+
+/* Título das seções */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #FF6600; /* Título em laranja */
+}
+
+/* Galeria de Deuses */
+.deuses-galeria {
+    display: flex;
+    gap: 15px;
+}
+
+.deuses-galeria img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Notícias */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links externos */
+a {
+    color: #FF6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de mudança de cor para rosa no link externo */
+a:hover {
+    color: #FF007F; /* Cor rosa */
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Efeito de mudança de cor para rosa no rodapé */
+footer p:hover {
+    color: #FF007F; /* Cor rosa */
+}

@@ -7,52 +7,65 @@
 
 /* Estilos do corpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #111111; /* Cor de fundo escura */
     color: #fff;
+    background-image: url('smite-background.jpg'); /* Substitua com sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Cabeçalho */
 header {
-    background-color: #000000; /* Fundo preto */
-    color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#logo img {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
+header .logo img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
-#titulo {
+header h1 {
     font-size: 36px;
     color: #FF6600; /* Laranja para o título */
     text-transform: uppercase;
+    margin-top: 20px;
 }
 
 /* Navegação */
-#menu ul {
+header nav ul {
     list-style: none;
     margin-top: 10px;
 }
 
-#menu ul li {
+header nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-#menu ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -60,48 +73,47 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Efeito de mudança de cor para rosa nos links de navegação */
-#menu ul li a:hover {
-    color: #FF007F; /* Cor rosa */
+header nav ul li a:hover {
+    color: #FF007F; /* Cor rosa ao passar o mouse */
 }
 
 /* Seções */
 section {
     padding: 20px;
-    margin: 20px;
-    background-color: #222222; /* Cor de fundo escura para as seções */
-    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para as seções */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Título das seções */
 section h2 {
-    font-size: 24px;
+    font-size: 28px;
+    color: #FF6600; /* Laranja para os títulos das seções */
+    margin-bottom: 20px;
+}
+
+/* Lista de motivos */
+.motivos-lista {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.motivos-lista li {
     margin-bottom: 15px;
-    color: #FF6600; /* Título em laranja */
-}
-
-/* Galeria de Deuses */
-.deuses-galeria {
-    display: flex;
-    gap: 15px;
-}
-
-.deuses-galeria img {
-    width: 30%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para os itens */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-/* Notícias */
-ul {
-    list-style-type: none;
+.motivos-lista li:hover {
+    background-color: #FF6600; /* Laranja para hover */
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Links externos */
+/* Links */
 a {
     color: #FF6600;
     text-decoration: none;
@@ -109,25 +121,24 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Efeito de mudança de cor para rosa no link externo */
 a:hover {
-    color: #FF007F; /* Cor rosa */
+    color: #FF007F; /* Cor rosa ao passar o mouse */
 }
 
 /* Rodapé */
 footer {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 footer p {
     font-size: 14px;
 }
 
-/* Efeito de mudança de cor para rosa no rodapé */
 footer p:hover {
-    color: #FF007F; /* Cor rosa */
+    color: #FF007F;
 }
